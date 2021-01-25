@@ -1,0 +1,33 @@
+* {font-family: Arial; margin-bottom: 1rem; color: #555;}
+concept, task {margin: 1rem;}
+title {font-size: 3rem; display: block; color: dodgerblue; border-bottom: 3px solid dodgerblue;}
+p, cmd, li, steps, step, stepresult, shortdesc, substep, context, prereq, info, result, postreq {font-size: 1rem; display: block; }
+section title {font-size: 2rem; margin-top: 2rem; color: #555; border-bottom: 3px solid #555;}
+
+/*steps counter*/
+steps { counter-reset: steps; padding: 0; }
+step {margin-left: 0; margin-top: -0.2rem; padding: 0; }
+step:before { content:counter(steps); counter-increment:steps;  margin-left: 0; position: relative; top: 1.2rem; }
+cmd { margin-left: 1.4rem; }
+info { margin-left: 1.4rem; }
+stepresult { margin-left: 1.4rem; }
+
+/*substeps counter - note that cannot use alpha steps with this*/
+substeps { counter-reset: substeps; padding: 0; }
+substep { margin-left: 0; margin-top: -1.2rem; }
+substep:before { content:counter(substeps, lower-alpha); counter-increment:substeps;  margin-left: 0; position: relative; top: 1.2rem; }
+substep cmd {margin-bottom: 0;}
+
+ul {display: block; list-style-type: none; counter-reset: ol; margin-top: 1rem; }
+ul li {counter-increment: ol; margin-right: 1rem; display: list-item; list-style: disc inside; margin-left: 1.2rem; color: darkorange; }
+
+/* colors for development
+steps {border: 1px solid red;}
+step {border: 1px solid orange;}
+substep {border: 1px solid salmon;}
+cmd {border: 1px dashed aqua;}
+info {border: 1px solid lime;} 
+stepresult {border: 1px dashed purple;}
+step:before {color: magenta;}
+substep:before {color: mediumblue; border: 1px solid mediumblue;}
+*/

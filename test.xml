@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="test.css" type="text/css" media="screen"?>
+<concept>
+  <title>This is the title</title>
+  <shortdesc>This is the short description</shortdesc>
+  <section>
+    <title>This is the section title</title>
+    <p>This is a paragraph in the section.</p>
+    <p>This is another paragraph in the section.</p>
+    <steps>
+      <step>
+        <cmd>This is the step command.</cmd>
+        <info>
+          <p>This is the paragraph that will have the image in it.</p>
+          <image href="this-is-a-test_dba6c92a-0657-47fe-9bc7-87c117897482.png" align="center" alt=""></image>
+            <p>This is another paragraph.</p>          
+            <substeps>
+              <substep><cmd>This is list item one.</cmd></substep>
+              <substep><cmd>This is list item two.</cmd></substep>
+              <substep><cmd>This is list item three.</cmd></substep>
+            </substeps>
+        </info>
+      </step>
+      <step>
+        <cmd>This is the second command.</cmd>
+        <stepresult>This is the step result.</stepresult>
+      </step>
+      <step>
+        <cmd>This is the third and final step.</cmd>
+        <info>
+            <substeps>
+              <substep><cmd>This is list item one.</cmd></substep>
+              <substep><cmd>This is list item two.</cmd></substep>
+              <substep><cmd>This is list item three.</cmd></substep>
+            </substeps>
+          </info>
+      </step>
+    </steps>
+  </section>
+</concept>
